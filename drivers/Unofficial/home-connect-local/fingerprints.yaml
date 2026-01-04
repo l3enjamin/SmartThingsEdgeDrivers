@@ -1,0 +1,3 @@
+package:
+  - path: drivers/Unofficial/home-connect-local
+    platform: smartthings

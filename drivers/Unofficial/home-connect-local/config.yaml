@@ -1,0 +1,4 @@
+name: "home-connect-local"
+packageKey: "home-connect-local"
+permissions:
+  lan: {}
