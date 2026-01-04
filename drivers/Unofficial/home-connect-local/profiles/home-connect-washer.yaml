@@ -1,0 +1,36 @@
+name: home-connect-washer
+components:
+- id: main
+  capabilities:
+  - id: switch
+    version: 1
+  - id: washerOperatingState
+    version: 1
+  - id: contactSensor
+    version: 1
+  - id: refresh
+    version: 1
+  categories:
+  - name: Washer
+preferences:
+- name: ipAddress
+  title: IP Address
+  description: IP Address of the device
+  required: true
+  preferenceType: string
+  definition:
+    stringType: text
+- name: encryptionKey
+  title: AES Key
+  description: 64 characters hex or base64? The python script uses base64 from config.json
+  required: true
+  preferenceType: string
+  definition:
+    stringType: text
+- name: iv
+  title: IV
+  description: Initialization Vector (Base64)
+  required: true
+  preferenceType: string
+  definition:
+    stringType: text
